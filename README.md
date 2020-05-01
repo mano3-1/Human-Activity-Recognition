@@ -10,7 +10,7 @@ The main aim of this repository is to classify few human activities based on the
 
 ## About posenet:
 Posenet, a deep learning model has shown state of art results in recognising pose.
-It detects 17 keypoints to generate the human pose.
+It detects 17 keypoints of human body to estimate the human pose.
 
 ## Data:
 The data which I used in this repository was generated from UCF101_data(Link is provided below) by running through the posenet model.I have taken 20 frames per example and then ran it through the posenet model and obtained the heatmaps.So the data used is of shape (m,20,16,17,21) where m is the training examples you are going to extract from UCF101 dataset.
