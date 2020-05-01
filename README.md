@@ -13,4 +13,10 @@ Posenet, a deep learning model has shown state of art results in recognising pos
 It detects 17 keypoints to generate the human pose.
 
 ## Data:
-The data which I used in this repository was generated from UCF101_data(Link is provided below) by running through the posenet model.I have taken 20 frames per example and then ran it through the posenet model and obtained the heatmaps.So the data used is of shape (m,20,16,17,21)
+The data which I used in this repository was generated from UCF101_data(Link is provided below) by running through the posenet model.I have taken 20 frames per example and then ran it through the posenet model and obtained the heatmaps.So the data used is of shape (m,20,16,17,21) where m is the training examples you are going to extract from UCF101 dataset.
+
+## Main Idea:
+The main idea is to train a model of few convlstm2d layers.The model was trained on focal loss to deal with class imbalance.Dropouts are also used to get rid of overfitting(as the model has high number of parameters ,there is a high chance of overfitting!).
+
+## Training:
+The training was done in google colab(with GPU accelerator).And it took aroung 8hrs to fully get trained.All the learning curves are shown below.
