@@ -1,0 +1,9 @@
+PoseNet Python
+Copyright 2018 Ross Wightman
+
+PoseNet Python numerous refactorings
+Copyright 2020 Peter Rigole
+
+tfjs PoseNet weights and original JS code
+Copyright 2018 Google LLC. All Rights Reserved.
+(https://github.com/tensorflow/tfjs-models | Apache License 2.0)

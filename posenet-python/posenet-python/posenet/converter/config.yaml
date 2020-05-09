@@ -1,0 +1,73 @@
+# This config file is no longer used.
+# It is left in place as a reference for future integration of the bodypix architecture.
+models:
+  bodypix:
+    resnet50_v1:
+      base_url: 'https://storage.googleapis.com/tfjs-models/savedmodel/bodypix/resnet50/float'
+      model_variant:
+        stride16:
+          filename: 'model-stride16.json'
+          output_stride: 16
+          data_format: 'NHWC'
+      input_tensors:
+        image: 'sub_2:0'
+      output_tensors:
+        heatmap: 'float_heatmaps:0'
+        offsets: 'float_short_offsets:0'
+        displacement_fwd: 'resnet_v1_50/displacement_fwd_2/BiasAdd:0'
+        displacement_bwd: 'resnet_v1_50/displacement_bwd_2/BiasAdd:0'
+        part_heatmap: 'float_part_heatmaps:0'
+        part_offsets: 'float_part_offsets:0'
+        long_offsets: 'float_long_offsets:0'
+        segments: 'float_segments:0'
+    mobilenet_v1_100:
+      base_url: 'https://storage.googleapis.com/tfjs-models/savedmodel/bodypix/mobilenet/float/100'
+      model_variant:
+        stride16:
+          filename: 'model-stride16.json'
+          output_stride: 16
+          data_format: 'NHWC'
+      input_tensors:
+        image: 'sub_2:0'
+      output_tensors:
+        heatmap: 'float_heatmaps:0'
+        offsets: 'float_short_offsets:0'
+        displacement_fwd: 'MobilenetV1/displacement_fwd_2/BiasAdd:0'
+        displacement_bwd: 'MobilenetV1/displacement_bwd_2/BiasAdd:0'
+        part_heatmap: 'float_part_heatmaps:0'
+        part_offsets: 'float_part_offsets:0'
+        long_offsets: 'float_long_offsets:0'
+        segments: 'float_segments:0'
+  posenet:
+    resnet50_v1:
+      base_url: 'https://storage.googleapis.com/tfjs-models/savedmodel/posenet/resnet50/float'
+      model_variant:
+        stride16:
+          filename: 'model-stride16.json'
+          output_stride: 16
+          data_format: 'NHWC'
+        stride32:
+          filename: 'model-stride32.json'
+          output_stride: 32
+          data_format: 'NHWC'
+      input_tensors:
+        image: 'sub_2:0'
+      output_tensors:
+        heatmap: 'float_heatmaps:0'
+        offsets: 'float_short_offsets:0'
+        displacement_fwd: 'resnet_v1_50/displacement_fwd_2/BiasAdd:0'
+        displacement_bwd: 'resnet_v1_50/displacement_bwd_2/BiasAdd:0'
+    mobilenet_v1_100:
+      base_url: 'https://storage.googleapis.com/tfjs-models/savedmodel/posenet/mobilenet/float/100'
+      model_variant:
+        stride16:
+          filename: 'model-stride16.json'
+          output_stride: 16
+          data_format: 'NHWC'
+      input_tensors:
+        image: 'sub_2:0'
+      output_tensors:
+        heatmap: 'MobilenetV1/heatmap_2/BiasAdd:0'
+        offsets: 'MobilenetV1/offset_2/BiasAdd:0'
+        displacement_fwd: 'MobilenetV1/displacement_fwd_2/BiasAdd:0'
+        displacement_bwd: 'MobilenetV1/displacement_bwd_2/BiasAdd:0'

@@ -1,0 +1,6 @@
+TFJS_OP_KEY = 'op'
+TFJS_DILATIONS_KEY = 'dilations'
+TFJS_CONV2D_KEY = 'Conv2D'
+
+TF_NHWC = 'NHWC'
+TF_NCHW = 'NCHW'
