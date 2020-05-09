@@ -23,4 +23,7 @@ Link for the data: https://www.crcv.ucf.edu/data/UCF101/UCF101.rar
 The main idea is to train a model of few convlstm2d layers.The model was trained on focal loss to deal with class imbalance.Dropouts are also used to get rid of overfitting(as the model has high number of parameters ,there is a high chance of overfitting!).
 
 ## Training:
-The training was done in google colab(with GPU accelerator).And it took aroung 8hrs to fully get trained.All the learning curves are shown below.
+The training was done in google colab(with GPU accelerator).And it took aroung 8hrs to fully get trained.<br/>
+The confusion matrix is plotted below:<br/>
+
+!["confusion_matrix"](https://github.com/mano3-1/Human-Activity-Recognition/blob/master/details/cm.PNG)
