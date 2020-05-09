@@ -13,7 +13,7 @@ so all the pre-requisites of the above repository are also required for this rep
 ## About posenet:
 Posenet, a deep learning model has shown state of art results in recognising pose.
 It detects 17 keypoints of human body to estimate the human pose.
-
+for more details of posenet...check out this link : https://medium.com/tensorflow/real-time-human-pose-estimation-in-the-browser-with-tensorflow-js-7dd0bc881cd5
 ## Data:
 The data which I used in this repository was generated from UCF101_data(Link is provided below) by running through the posenet model.I have taken 20 frames per datapoint and then ran it through the posenet model and obtained the heatmaps.So the data used is of shape (m,20,16,17,21) where m is the training examples you are going to extract from UCF101 dataset ,20 is the number of frames we are considering to create the dataset and (16 ,17 ,21) is the shape of heatmap.<br/>
 
