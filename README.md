@@ -7,13 +7,15 @@ The main aim of this repository is to classify few human activities based on the
 ## Requirements:
 1)Keras 2.0<br/>
 2)opencv-python
-
+3)posenet-python port :https://github.com/atomicbits/posenet-python
+The above posenet-python port was slightly changed and then used for our repository.
+so all the pre-requisites of the above repository are also required for this repository like tfjs-totf converter(https://github.com/patlevin/tfjs-to-tf).
 ## About posenet:
 Posenet, a deep learning model has shown state of art results in recognising pose.
 It detects 17 keypoints of human body to estimate the human pose.
 
 ## Data:
-The data which I used in this repository was generated from UCF101_data(Link is provided below) by running through the posenet model.I have taken 20 frames per datapoint and then ran it through the posenet model and obtained the heatmaps.So the data used is of shape (m,20,16,17,21) where m is the training examples you are going to extract from UCF101 dataset ,20 is the number of frmaes we are considering to create the dataset and (16 ,17 ,21) is the shape of heatmap.<br/>
+The data which I used in this repository was generated from UCF101_data(Link is provided below) by running through the posenet model.I have taken 20 frames per datapoint and then ran it through the posenet model and obtained the heatmaps.So the data used is of shape (m,20,16,17,21) where m is the training examples you are going to extract from UCF101 dataset ,20 is the number of frames we are considering to create the dataset and (16 ,17 ,21) is the shape of heatmap.<br/>
 
 Link for the data: https://www.crcv.ucf.edu/data/UCF101/UCF101.rar
 
