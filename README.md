@@ -1,4 +1,4 @@
-# Human-Activity-Recognition
+# Human-Activity-Recognition with posenet
 Classifying human activities from pose by posenet model
 
 ## Main aim:
