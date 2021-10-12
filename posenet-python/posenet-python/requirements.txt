@@ -1,5 +1,5 @@
 numpy==1.18.1
-opencv_python_headless==3.4.5.20
+opencv_python_headless==3.4.7.28
 scipy==1.4.1
 tensorflowjs==1.4.0
 # tensorflow==2.1.0  # uncomment when installing from scratch (not in docker)
