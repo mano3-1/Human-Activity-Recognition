@@ -1,4 +1,4 @@
-numpy==1.18.1
+numpy==1.22.0
 opencv_python_headless==3.4.5.20
 scipy==1.4.1
 tensorflowjs==1.4.0
